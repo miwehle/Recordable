@@ -32,14 +32,15 @@ public class RecordableInterceptorTest {
   public void givenTheService_whenMethodAndInterceptorExecuted_thenOK() {
     // setup
     // 1) delete the recorded file
-    String fileName = Recorder.outputFile(TC, "RETURN_VALUE SuperService#deliverService (123456, 42)");
+    String fileName = Recorder.outputFile(TC, "RETURN_VALUE SuperService#deliverService (123456, _, 42, Yoda)");
     File recordedFile = new File(fileName);
     recordedFile.delete();
     // 2) get service (the SUT)
     SuperService service = container.select(SuperService.class).get();
 
     // exercise
-    service.deliverService("123456", "unused", "42");
+    MyValueObject yoda = new MyValueObject(823, "Yoda");
+    service.deliverService("123456", "unused", "42", yoda);
 
     // verify
     // 1)

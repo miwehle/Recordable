@@ -1,6 +1,7 @@
 package com.baeldung.interceptor;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
@@ -39,18 +40,36 @@ public class RecordableInterceptor {
     for (int i = 0; i < n; i++) {
       boolean recordParameter = false;
       Annotation[] annos = annotations[i];
+      Annotation anno = null;
       for (int j = 0; j < annos.length; j++) {
-        Annotation anno = annos[j];
-        if (anno.toString().contains("RecordableParameter"))
+        anno = annos[j];
+        if (anno.toString().contains("RecordableParam"))
           recordParameter = true;
       }
-
+      
       if (recordParameter) {
         Object param = parameters[i];
-        result += param.toString();
-        if (i < n - 1)
-          result += ", ";
+        
+        // TODO Das Holen der Methode allgemeingültig implementieren
+        if (i == 3) {
+          try {
+            Method method = param.getClass().getMethod("getName");
+            Object name = method.invoke(param);
+            result += name.toString();
+          }
+          catch (Exception e) {
+            throw new RuntimeException(e);
+          }
+        }
+        else result += param.toString();
+        
       }
+      else {
+        result += "_";
+      }
+
+      if (i < n - 1)
+        result += ", ";
     }
 
     System.out.println(result);
