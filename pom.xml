@@ -32,28 +32,27 @@
 			<scope>test</scope>
 		</dependency>
 
-
-		<!-- <dependency> <groupId>org.modelmapper</groupId> <artifactId>modelmapper</artifactId> 
-			</dependency> <dependency> <groupId>org.jboss.resteasy</groupId> <artifactId>resteasy-client</artifactId> 
-			</dependency> -->
-
+		<!--
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
 			<version>${jackson.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
 			<version>${jackson.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 			<version>${jackson.version}</version>
 		</dependency>
+		-->
 
-		<!-- For reading of date types from Json files in unit-tests. -->
+		<!-- For reading of date types from Json files -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
 			<artifactId>jackson-datatype-jsr310</artifactId>
