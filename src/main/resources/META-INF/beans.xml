@@ -4,6 +4,6 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 	      http://java.sun.com/xml/ns/javaee/beans_1_2.xsd">
 	<interceptors>
-		<class>com.baeldung.interceptor.RecordableInterceptor</class>
+		<class>com.aldisued.iit.stores.ppd.recorder.RecordableInterceptor</class>
 	</interceptors>
 </beans>

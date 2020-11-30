@@ -1,4 +1,4 @@
-package com.baeldung.interceptor;
+package com.aldisued.iit.stores.ppd.recorder;
 
 public class MyValueObject {
   
