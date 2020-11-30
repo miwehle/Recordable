@@ -11,8 +11,6 @@ import org.junit.Before;
 import org.junit.Test;
 import com.aldisued.iit.stores.ppd.recorder.RecordableInterceptor;
 import com.aldisued.iit.stores.ppd.recorder.Recorder;
-import com.aldisued.iit.stores.ppd.recorderuser.MyValueObject;
-import com.aldisued.iit.stores.ppd.recorderuser.SuperService;
 
 public class RecordableInterceptorTest {
   Weld weld;
