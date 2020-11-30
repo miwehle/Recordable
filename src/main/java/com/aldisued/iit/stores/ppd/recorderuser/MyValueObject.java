@@ -1,4 +1,4 @@
-package com.aldisued.iit.stores.ppd.recorder;
+package com.aldisued.iit.stores.ppd.recorderuser;
 
 public class MyValueObject {
   

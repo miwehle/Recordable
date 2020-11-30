@@ -60,7 +60,7 @@ public class Recorder {
     return outputFile(testCase, name);
   }
   
-  protected static String outputFile(String testCase, String name) {
+  public static String outputFile(String testCase, String name) {
     return outputDir(testCase) + "\\" + name + ".json";
   }
 

@@ -1,4 +1,4 @@
-package com.aldisued.iit.stores.ppd.recorder;
+package com.aldisued.iit.stores.ppd.recorderuser;
 
 import static org.junit.Assert.assertEquals;
 import java.io.File;
@@ -9,10 +9,10 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import com.aldisued.iit.stores.ppd.recorder.MyValueObject;
 import com.aldisued.iit.stores.ppd.recorder.RecordableInterceptor;
 import com.aldisued.iit.stores.ppd.recorder.Recorder;
-import com.aldisued.iit.stores.ppd.recorder.SuperService;
+import com.aldisued.iit.stores.ppd.recorderuser.MyValueObject;
+import com.aldisued.iit.stores.ppd.recorderuser.SuperService;
 
 public class RecordableInterceptorTest {
   Weld weld;

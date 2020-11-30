@@ -1,4 +1,7 @@
-package com.aldisued.iit.stores.ppd.recorder;
+package com.aldisued.iit.stores.ppd.recorderuser;
+
+import com.aldisued.iit.stores.ppd.recorder.Recordable;
+import com.aldisued.iit.stores.ppd.recorder.RecordableParam;
 
 public class SuperService {
 
